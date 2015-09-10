@@ -1,0 +1,37 @@
+$bare-detect-o-color:				orange;
+$bare-detect-c-color:				cyan;
+$bare-detect-u-color:				violet;
+$bare-detect-_-color:				red;
+
+/* 
+   #detect
+   ========================================================================== */
+
+/**
+ * The detect module is used to outline all namespaced elements. 
+ *
+ * Thanks to Harry Roberts:
+ *
+ * http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
+ */
+
+[class^="o-"],
+[class*=" o-"] {
+  outline: 4px solid $bare-detect-o-color;
+}
+
+[class^="c-"],
+[class*=" c-"] {
+  outline: 4px solid $bare-detect-c-color;
+}
+
+[class^="u-"],
+[class*=" u-"] {
+  outline: 4px solid $bare-detect-u-color;
+}
+
+[class^="_"],
+[class*=" _"] {
+  outline: 4px solid $bare-detect-_-color;
+}
+
