@@ -1,7 +1,21 @@
-$bare-detect-o-color:				orange;
-$bare-detect-c-color:				cyan;
-$bare-detect-u-color:				violet;
-$bare-detect-_-color:				red;
+// 
+// Declarations  
+// ========================================================================== 
+
+//
+// Features:
+//
+
+$bare-detect--enabled:            	 false !default;
+
+//
+// Defaults:
+//
+
+$bare-detect-o-color:				orange !default;
+$bare-detect-c-color:				  cyan !default;
+$bare-detect-u-color:				violet !default;
+$bare-detect-_-color:				   red !default;
 
 /* 
    #detect
@@ -15,23 +29,27 @@ $bare-detect-_-color:				red;
  * http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
  */
 
-[class^="o-"],
-[class*=" o-"] {
-  outline: 4px solid $bare-detect-o-color;
-}
+@if ($bare-detect--enabled) == true) {
 
-[class^="c-"],
-[class*=" c-"] {
-  outline: 4px solid $bare-detect-c-color;
-}
+	[class^="o-"],
+	[class*=" o-"] {
+	  outline: 4px solid $bare-detect-o-color;
+	}
 
-[class^="u-"],
-[class*=" u-"] {
-  outline: 4px solid $bare-detect-u-color;
-}
+	[class^="c-"],
+	[class*=" c-"] {
+	  outline: 4px solid $bare-detect-c-color;
+	}
 
-[class^="_"],
-[class*=" _"] {
-  outline: 4px solid $bare-detect-_-color;
+	[class^="u-"],
+	[class*=" u-"] {
+	  outline: 4px solid $bare-detect-u-color;
+	}
+
+	[class^="_"],
+	[class*=" _"] {
+	  outline: 4px solid $bare-detect-_-color;
+	}
+
 }
 
