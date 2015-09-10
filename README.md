@@ -1,6 +1,6 @@
 # Detect Module
 
-The `detect` module is used to outline all namespaced elements.
+The `detect` module is used to outline all namespaced elements. It is recommended that you only run one test at a time.
 
 Thanks to Harry Roberts:
 
@@ -15,3 +15,9 @@ Install using Bower:
 Import into project:
 
 	@import "bower_components/bare-detect/tests.detect";
+
+## Settings
+
+**$bare-detect--enabled**
+
+Boolean value that determines if the test will be enabled.
